@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KLCC 房地產投資報告 2026 | KLCC Property Investment Report</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:   #0D1F3C;
+  --teal:   #0F6B75;
+  --teal2:  #12919E;
+  --gold:   #C9973A;
+  --green:  #1A6B3A;
+  --red:    #B52B27;
+  --amber:  #945E10;
+  --bg:     #F7F4EF;
+  --bg2:    #EEEAE3;
+  --white:  #FDFCFA;
+  --text:   #1A1612;
+  --muted:  #6B635A;
+  --border: #D4CEC5;
+  --shadow: 0 4px 32px rgba(13,31,60,0.10);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;}
+
+/* ── SIDEBAR NAV ── */
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:260px;background:var(--navy);overflow-y:auto;z-index:100;padding:0 0 40px;}
+.sidebar::-webkit-scrollbar{width:4px;}
+.sidebar::-webkit-scrollbar-thumb{background:var(--teal);}
+.sidebar-logo{padding:28px 24px 20px;border-bottom:1px solid rgba(255,255,255,0.08);}
+.sidebar-logo .logo-en{font-family:'Playfair Display',serif;font-size:13px;color:var(--teal2);letter-spacing:.12em;text-transform:uppercase;}
+.sidebar-logo .logo-zh{font-family:'Playfair Display',serif;font-size:18px;color:#fff;font-weight:700;margin-top:2px;}
+.sidebar-logo .logo-sub{font-size:11px;color:rgba(255,255,255,.4);margin-top:4px;}
+.nav-section{padding:16px 0 4px 24px;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.3);font-weight:600;}
+.nav-item{display:block;padding:9px 24px 9px 24px;font-size:12.5px;color:rgba(255,255,255,.65);text-decoration:none;border-left:3px solid transparent;transition:all .2s;}
+.nav-item:hover,.nav-item.active{color:#fff;background:rgba(255,255,255,.06);border-left-color:var(--teal2);}
+.nav-item .nav-num{font-family:'DM Mono',monospace;font-size:10px;color:var(--teal2);margin-right:6px;}
+.nav-badge{display:inline-block;font-size:10px;padding:1px 6px;border-radius:3px;margin-left:6px;font-weight:500;}
+.nb-green{background:#1A6B3A22;color:#3EC87A;}
+.nb-red{background:#B52B2722;color:#F06B67;}
+.nb-amber{background:#945E1022;color:#E09B45;}
+
+/* ── MAIN CONTENT ── */
+.main{margin-left:260px;padding:0;}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,var(--navy) 0%,#1A3A5C 50%,#0F4D5A 100%);padding:80px 64px 60px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-80px;right:-80px;width:400px;height:400px;border:1px solid rgba(255,255,255,.06);border-radius:50%;}
+.hero::after{content:'';position:absolute;bottom:-120px;right:80px;width:280px;height:280px;border:1px solid rgba(15,107,117,.25);border-radius:50%;}
+.hero-tag{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--teal2);font-weight:600;margin-bottom:16px;}
+.hero h1{font-family:'Playfair Display',serif;font-size:48px;font-weight:900;color:#fff;line-height:1.15;margin-bottom:8px;}
+.hero h1 span{color:var(--teal2);}
+.hero-zh{font-family:'Playfair Display',serif;font-size:28px;color:rgba(255,255,255,.7);margin-bottom:24px;}
+.hero-meta{display:flex;gap:32px;flex-wrap:wrap;}
+.hero-stat{text-align:left;}
+.hero-stat .num{font-family:'DM Mono',monospace;font-size:28px;font-weight:500;color:var(--gold);}
+.hero-stat .lbl{font-size:11px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.1em;}
+.hero-date{position:absolute;top:32px;right:64px;text-align:right;}
+.hero-date .dt{font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,.35);letter-spacing:.1em;}
+
+/* ── SECTIONS ── */
+.section{padding:56px 64px;border-bottom:1px solid var(--border);}
+.section:last-child{border-bottom:none;}
+.section-tag{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:10px;}
+.section h2{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--navy);margin-bottom:6px;line-height:1.2;}
+.section h2 .zh{font-size:18px;color:var(--muted);font-family:'DM Sans',sans-serif;font-weight:400;display:block;margin-top:2px;}
+.section p{color:var(--muted);margin-bottom:12px;max-width:760px;}
+
+/* ── SUMMARY CARDS ── */
+.rank-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;margin-top:24px;}
+.rank-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:20px;position:relative;overflow:hidden;transition:box-shadow .2s,transform .2s;}
+.rank-card:hover{box-shadow:var(--shadow);transform:translateY(-2px);}
+.rank-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;}
+.rank-card.top::before{background:linear-gradient(90deg,var(--green),var(--teal));}
+.rank-card.caution::before{background:var(--amber);}
+.rank-card.avoid::before{background:var(--red);}
+.rank-num{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);margin-bottom:4px;}
+.rank-name{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;}
+.rank-name .zh{font-size:12px;color:var(--muted);font-weight:400;}
+.rank-psf{font-family:'DM Mono',monospace;font-size:13px;color:var(--teal);margin-bottom:8px;}
+.rank-desc{font-size:12.5px;color:var(--muted);line-height:1.55;}
+.rank-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px;}
+.tag{font-size:10.5px;padding:3px 8px;border-radius:4px;font-weight:500;}
+.tag-green{background:#E8F5EC;color:var(--green);}
+.tag-red{background:#FDEAEA;color:var(--red);}
+.tag-amber{background:#FDF3E3;color:var(--amber);}
+.tag-blue{background:#E3F0FD;color:#1A4F8A;}
+.tag-teal{background:#E3F4F5;color:var(--teal);}
+
+/* ── PROJECT CARDS ── */
+.project-card{background:var(--white);border:1px solid var(--border);border-radius:14px;margin-bottom:24px;overflow:hidden;}
+.project-header{padding:20px 24px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;transition:background .15s;}
+.project-header:hover{background:var(--bg2);}
+.ph-left{flex:1;}
+.ph-num{font-family:'DM Mono',monospace;font-size:10px;color:var(--teal);margin-bottom:2px;}
+.ph-name{font-size:16px;font-weight:600;color:var(--navy);}
+.ph-name .zh{font-size:12px;color:var(--muted);font-weight:400;margin-left:6px;}
+.ph-sub{font-size:12px;color:var(--muted);margin-top:2px;}
+.ph-right{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.verdict-pill{font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;}
+.vp-green{background:#E8F5EC;color:var(--green);}
+.vp-amber{background:#FDF3E3;color:var(--amber);}
+.vp-red{background:#FDEAEA;color:var(--red);}
+.chevron{font-size:18px;color:var(--muted);transition:transform .25s;user-select:none;}
+.chevron.open{transform:rotate(180deg);}
+.project-body{display:none;padding:0 24px 24px;border-top:1px solid var(--border);}
+.project-body.open{display:block;}
+
+.data-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0;}
+.data-cell{background:var(--bg);border-radius:8px;padding:12px;}
+.data-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;}
+.data-value{font-size:13px;font-weight:500;color:var(--navy);}
+
+.subsection-title{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin:20px 0 10px;}
+.subsection-title.green{color:var(--teal);}
+.subsection-title.red{color:var(--red);}
+
+.flag-list{list-style:none;}
+.flag-list li{font-size:13px;color:var(--muted);padding:7px 0;border-bottom:1px solid var(--border);display:flex;gap:8px;align-items:flex-start;line-height:1.55;}
+.flag-list li:last-child{border-bottom:none;}
+.fi{flex-shrink:0;margin-top:2px;width:16px;text-align:center;}
+.fi-r{color:var(--red);}
+.fi-g{color:var(--green);}
+.fi-a{color:var(--amber);}
+
+.verdict-box{border-radius:10px;padding:16px;margin-top:16px;}
+.vb-green{background:#E8F5EC;border:1px solid #B8DFC5;}
+.vb-amber{background:#FDF3E3;border:1px solid #F0D4A8;}
+.vb-red{background:#FDEAEA;border:1px solid #F0B8B8;}
+.vb-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px;}
+.vb-green .vb-title{color:var(--green);}
+.vb-amber .vb-title{color:var(--amber);}
+.vb-red .vb-title{color:var(--red);}
+.vb-text{font-size:13px;line-height:1.6;}
+.vb-green .vb-text{color:#174D2D;}
+.vb-amber .vb-text{color:#6B4210;}
+.vb-red .vb-text{color:#7A1A18;}
+
+/* ── COMPARISON TABLE ── */
+.comp-table-wrap{overflow-x:auto;margin-top:20px;}
+.comp-table{width:100%;border-collapse:collapse;font-size:12.5px;}
+.comp-table th{background:var(--navy);color:#fff;padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap;}
+.comp-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:middle;}
+.comp-table tr:nth-child(odd) td{background:var(--bg);}
+.comp-table tr:hover td{background:var(--bg2);}
+.comp-table .c-green{color:var(--green);font-weight:600;}
+.comp-table .c-red{color:var(--red);font-weight:600;}
+.comp-table .c-amber{color:var(--amber);font-weight:600;}
+.comp-table .stars{color:var(--gold);font-size:13px;letter-spacing:1px;}
+
+/* ── CHECKLIST ── */
+.checklist{list-style:none;margin-top:16px;}
+.checklist li{padding:10px 0;border-bottom:1px solid var(--border);display:flex;gap:10px;font-size:13.5px;color:var(--muted);align-items:flex-start;}
+.checklist li:last-child{border-bottom:none;}
+.check-box{width:18px;height:18px;border-radius:4px;background:var(--bg2);border:1.5px solid var(--border);flex-shrink:0;margin-top:2px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:11px;transition:all .15s;}
+.check-box.checked{background:var(--teal);border-color:var(--teal);color:#fff;}
+
+/* ── COST TABLE ── */
+.cost-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:16px;}
+.cost-table th{background:var(--bg2);color:var(--navy);padding:10px 14px;text-align:left;font-weight:600;border-bottom:2px solid var(--border);}
+.cost-table td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--muted);}
+.cost-table tr:last-child td{border-bottom:none;}
+.cost-table td:first-child{font-weight:500;color:var(--navy);}
+
+/* ── ALERT BOXES ── */
+.alert{border-radius:10px;padding:18px 20px;margin:20px 0;}
+.alert-red{background:#FDEAEA;border-left:4px solid var(--red);}
+.alert-amber{background:#FDF3E3;border-left:4px solid var(--amber);}
+.alert-teal{background:#E3F4F5;border-left:4px solid var(--teal);}
+.alert-title{font-size:13px;font-weight:700;margin-bottom:6px;}
+.alert-red .alert-title{color:var(--red);}
+.alert-amber .alert-title{color:var(--amber);}
+.alert-teal .alert-title{color:var(--teal);}
+.alert p{font-size:13px;line-height:1.6;max-width:100%;}
+.alert-red p{color:#7A1A18;}
+.alert-amber p{color:#6B4210;}
+.alert-teal p{color:#0C4A50;}
+
+/* ── FOOTER ── */
+.footer{background:var(--navy);padding:40px 64px;color:rgba(255,255,255,.4);font-size:12px;line-height:1.7;}
+.footer a{color:var(--teal2);text-decoration:none;}
+
+/* ── LANG TOGGLE ── */
+.lang-toggle{position:fixed;top:16px;right:24px;z-index:200;display:flex;gap:6px;}
+.lang-btn{font-size:11px;padding:5px 12px;border-radius:20px;border:1px solid rgba(255,255,255,.2);background:rgba(13,31,60,.7);color:rgba(255,255,255,.7);cursor:pointer;backdrop-filter:blur(8px);transition:all .2s;}
+.lang-btn.active{background:var(--teal);border-color:var(--teal);color:#fff;}
+
+/* ── PRINT / MOBILE ── */
+@media(max-width:900px){
+  .sidebar{display:none;}
+  .main{margin-left:0;}
+  .hero,.section{padding:40px 24px;}
+  .data-grid{grid-template-columns:1fr 1fr;}
+  .lang-toggle{right:12px;}
+}
+@media print{
+  .sidebar,.lang-toggle{display:none;}
+  .main{margin-left:0;}
+  .project-body{display:block!important;}
+  .section{page-break-inside:avoid;}
+}
+</style>
+</head>
+<body>
+
+<!-- Language Toggle -->
+<div class="lang-toggle">
+  <button class="lang-btn active" onclick="setLang('zh')" id="btn-zh">繁體中文</button>
+  <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+</div>
+
+<!-- Sidebar Navigation -->
+<nav class="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-en">KLCC · 2026</div>
+    <div class="logo-zh" id="nav-title">房地產投資報告</div>
+    <div class="logo-sub" id="nav-sub">14個項目 · 海外投資人分析</div>
+  </div>
+
+  <div class="nav-section" id="nav-s0">執行摘要</div>
+  <a class="nav-item" href="#summary"><span class="nav-num">01</span><span id="n-sum">執行摘要 &amp; 排名</span></a>
+
+  <div class="nav-section" id="nav-s1">項目分析</div>
+  <a class="nav-item" href="#p-conlay"><span class="nav-num">2.6</span>The Conlay<span class="nav-badge nb-green">首選#1</span></a>
+  <a class="nav-item" href="#p-ceylon"><span class="nav-num">2.11</span>Ceylon Hill<span class="nav-badge nb-green">首選#2</span></a>
+  <a class="nav-item" href="#p-star"><span class="nav-num">2.10</span>Star Residences<span class="nav-badge nb-green">推薦</span></a>
+  <a class="nav-item" href="#p-clout"><span class="nav-num">2.4</span>CloutHaus KLCC<span class="nav-badge nb-green">推薦</span></a>
+  <a class="nav-item" href="#p-swnk"><span class="nav-num">2.8</span>SWNK BBCC<span class="nav-badge nb-green">推薦</span></a>
+  <a class="nav-item" href="#p-orion"><span class="nav-num">2.9</span>Orion BB</a>
+  <a class="nav-item" href="#p-skylon"><span class="nav-num">2.12</span>Skylon</a>
+  <a class="nav-item" href="#p-pav-sq"><span class="nav-num">2.2</span>Pavilion Square</a>
+  <a class="nav-item" href="#p-lofthill"><span class="nav-num">2.14</span>Lofthill</a>
+  <a class="nav-item" href="#p-hallson"><span class="nav-num">2.1</span>Armani Hallson<span class="nav-badge nb-amber">謹慎</span></a>
+  <a class="nav-item" href="#p-centrix"><span class="nav-num">2.7</span>Centrix KLCC<span class="nav-badge nb-amber">謹慎</span></a>
+  <a class="nav-item" href="#p-plat"><span class="nav-num">2.5</span>Platinum Suite</a>
+  <a class="nav-item" href="#p-prestige"><span class="nav-num">2.13</span>Armani Prestige<span class="nav-badge nb-red">迴避</span></a>
+  <a class="nav-item" href="#p-lexis"><span class="nav-num">2.3</span>Royal Lexis<span class="nav-badge nb-red">迴避</span></a>
+
+  <div class="nav-section" id="nav-s2">分析工具</div>
+  <a class="nav-item" href="#comparison"><span class="nav-num">03</span><span id="n-comp">全面比較表</span></a>
+  <a class="nav-item" href="#traps"><span class="nav-num">04</span><span id="n-trap">代理商陷阱警示</span></a>
+  <a class="nav-item" href="#armani"><span class="nav-num">05</span><span id="n-arm">阿曼尼集中風險</span></a>
+  <a class="nav-item" href="#checklist"><span class="nav-num">06</span><span id="n-chk">盡職調查清單</span></a>
+</nav>
+
+<!-- Main Content -->
+<div class="main">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-date"><div class="dt" id="hero-date">MAY 2026 · CONFIDENTIAL</div></div>
+    <div class="hero-tag" id="hero-tag">KLCC CORRIDOR · FOREIGN INVESTOR ANALYSIS</div>
+    <h1 id="hero-h1">KLCC Property<br><span>Investment Report</span></h1>
+    <div class="hero-zh" id="hero-zh">吉隆坡城市中心房地產投資報告</div>
+    <div class="hero-meta">
+      <div class="hero-stat"><div class="num">14</div><div class="lbl" id="hl1">項目分析</div></div>
+      <div class="hero-stat"><div class="num">5</div><div class="lbl" id="hl2">強烈推薦</div></div>
+      <div class="hero-stat"><div class="num">2</div><div class="lbl" id="hl3">強烈建議迴避</div></div>
+      <div class="hero-stat"><div class="num">7</div><div class="lbl" id="hl4">代理商陷阱警示</div></div>
+    </div>
+  </div>
+
+  <!-- SECTION: Executive Summary -->
+  <section class="section" id="summary">
+    <div class="section-tag" id="s1-tag">SECTION 01 · EXECUTIVE SUMMARY</div>
+    <h2 id="s1-h2">主要推薦排名 <span class="zh" id="s1-sub">Top Picks for Foreign Investors</span></h2>
+    <p id="s1-p">本報告分析KLCC黃金三角區域14個項目，涵蓋新推盤與已竣工公寓，針對海外投資人（外籍購房最低RM100萬）提供獨立評估。以下為核心推薦排名：</p>
+
+    <div class="rank-grid">
+      <div class="rank-card top" onclick="goTo('p-conlay')">
+        <div class="rank-num">#1 首選</div>
+        <div class="rank-name">The Conlay <span class="zh">E&O × 三井不動產</span></div>
+        <div class="rank-psf">~RM 2,450 psf · 永久地契 · 即將竣工</div>
+        <div class="rank-desc">最佳開發商組合、YOO Studio室內設計、TRX增值潛力、幾乎零建設風險。</div>
+        <div class="rank-tags"><span class="tag tag-green">永久地契</span><span class="tag tag-green">E&O品牌</span><span class="tag tag-teal">即將竣工</span></div>
+      </div>
+      <div class="rank-card top" onclick="goTo('p-ceylon')">
+        <div class="rank-num">#2 首選</div>
+        <div class="rank-name">Pavilion Ceylon Hill <span class="zh">錫蘭山</span></div>
+        <div class="rank-psf">RM 800–2,086 psf · 住宅地契 · 已竣工</div>
+        <div class="rank-desc">本報告唯一住宅分層地契，HDA保護。可低價入市（RM800–1,000/呎）遠低於重置成本。</div>
+        <div class="rank-tags"><span class="tag tag-green">住宅地契</span><span class="tag tag-green">Pavilion品牌</span><span class="tag tag-teal">已竣工</span></div>
+      </div>
+      <div class="rank-card top" onclick="goTo('p-star')">
+        <div class="rank-num">#3 價值首選</div>
+        <div class="rank-name">Star Residences T1 <span class="zh">星居1座</span></div>
+        <div class="rank-psf">RM 480–2,257 psf · 永久地契 · 已竣工</div>
+        <div class="rank-desc">三星C&T建造（哈里發塔同一承建商）。T1二手低至RM480/呎，永久地契KLCC最佳性價比。</div>
+        <div class="rank-tags"><span class="tag tag-green">永久地契</span><span class="tag tag-green">三星C&T建造</span><span class="tag tag-teal">已竣工</span></div>
+      </div>
+      <div class="rank-card top" onclick="goTo('p-clout')">
+        <div class="rank-num">#4 推薦</div>
+        <div class="rank-name">CloutHaus KLCC <span class="zh">TA Global</span></div>
+        <div class="rank-psf">RM 2,800–2,900 psf · 永久地契 · 2029</div>
+        <div class="rank-desc">馬交所上市開發商，無保證租金回報，雙峰塔正前方地址，Paradox Hotel整合。</div>
+        <div class="rank-tags"><span class="tag tag-green">永久地契</span><span class="tag tag-green">上市開發商</span><span class="tag tag-blue">無GRR</span></div>
+      </div>
+      <div class="rank-card top" onclick="goTo('p-swnk')">
+        <div class="rank-num">#5 收益首選</div>
+        <div class="rank-name">SWNK Houze BBCC <span class="zh">BBCC</span></div>
+        <div class="rank-psf">RM 1,000–1,689 psf · 租賃地契 · 2026</div>
+        <div class="rank-desc">EPF公積金局為JV合夥人（零棄建風險）。最低每平方呎、5–6%短租收益潛力。</div>
+        <div class="rank-tags"><span class="tag tag-amber">租賃地契</span><span class="tag tag-green">EPF聯合開發</span><span class="tag tag-teal">2026竣工</span></div>
+      </div>
+      <div class="rank-card avoid" onclick="goTo('p-lexis')">
+        <div class="rank-num">⚠ 強烈迴避</div>
+        <div class="rank-name">Royal Lexis KLCC</div>
+        <div class="rank-psf">~RM 3,000–3,300 psf · 商業地契</div>
+        <div class="rank-desc">保證租金回報陷阱。3年後實際收益率約2%。KL Metro無KLCC住宅交付記錄。全報告最高每平方呎。</div>
+        <div class="rank-tags"><span class="tag tag-red">GRR陷阱</span><span class="tag tag-red">商業地契</span><span class="tag tag-red">最高每平方呎</span></div>
+      </div>
+    </div>
+
+    <div class="alert alert-teal" style="margin-top:28px;">
+      <div class="alert-title">🇹🇼 台灣投資人須知</div>
+      <p>馬來西亞外籍購房最低RM100萬令吉（含車位）。非居民租金所得稅26%。RPGT：3年內出售30%，逐年遞減至第5年後10%。建議在馬來西亞開設匯豐、大眾銀行或馬來亞銀行帳戶以處理租金及還款。台馬雙重徵稅協議可避免雙邊重複課稅，建議投資前諮詢台灣稅務顧問。</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: Project Analysis -->
+  <section class="section" id="projects">
+    <div class="section-tag">SECTION 02 · PROJECT ANALYSIS</div>
+    <h2 id="s2-h2">逐項目詳細分析 <span class="zh">All 14 Projects</span></h2>
+    <p id="s2-p">點擊任一項目展開完整分析。排列順序依推薦優先度排序。</p>
+
+    <!-- ═══ PROJECT CARDS ═══ -->
+
+    <!-- The Conlay -->
+    <div class="project-card" id="p-conlay">
+      <div class="project-header" onclick="toggleCard(this)">
+        <div class="ph-left">
+          <div class="ph-num">2.6</div>
+          <div class="ph-name">The Conlay <span class="zh">E&O × 三井不動產</span></div>
+          <div class="ph-sub">Jalan Conlay · MRT Conlay + TRX金融區 · E&O Berhad + Mitsui Fudosan</div>
+        </div>
+        <div class="ph-right">
+          <span class="tag tag-green">永久地契</span>
+          <span class="verdict-pill vp-green">首選 #1</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="data-grid">
+          <div class="data-cell"><div class="data-label">建築面積</div><div class="data-value">740–1,335 sq ft（1–3房）</div></div>
+          <div class="data-cell"><div class="data-label">每平方呎均價</div><div class="data-value">~RM 2,450</div></div>
+          <div class="data-cell"><div class="data-label">起售價</div><div class="data-value">~RM 1,145,000</div></div>
+          <div class="data-cell"><div class="data-label">樓層／單位</div><div class="data-value">51層 / 491個單位</div></div>
+          <div class="data-cell"><div class="data-label">地契</div><div class="data-value">永久地契（住宅）</div></div>
+          <div class="data-cell"><div class="data-label">竣工</div><div class="data-value">即將竣工 2025</div></div>
+        </div>
+        <div class="subsection-title green">代理商主要賣點</div>
+        <ul class="flag-list">
+          <li><span class="fi fi-g">✦</span>E&O = 馬來西亞最受信賴豪華住宅品牌（10 Stonor、Dua Residency）</li>
+          <li><span class="fi fi-g">✦</span>三井不動產 = 日本精準建築品質，YOO Studio London室內設計</li>
+          <li><span class="fi fi-g">✦</span>即將竣工——幾乎零建設風險，TRX長期資本增值催化劑</li>
+        </ul>
+        <div class="subsection-title red">風險警示</div>
+        <ul class="flag-list">
+          <li><span class="fi fi-a">▲</span>收益3.5–4.5%——資本增值投資，非現金收益投資</li>
+          <li><span class="fi fi-a">▲</span>TRX區域仍在成熟中，全面租金溢價可能需3–5年顯現</li>
+        </ul>
+        <div class="verdict-box vb-green"><div class="vb-title">首選推薦 #1 · TOP PICK</div><div class="vb-text">最強的綜合投資組合：最佳開發商配對 + 永久地契 + 即將竣工（最低風險）+ YOO Studio設計 + TRX增值故事。對注重安全感與品牌的海外投資人，這是首要推薦。</div></div>
+      </div>
+    </div>
+
+    <!-- Pavilion Ceylon Hill -->
+    <div class="project-card" id="p-ceylon">
+      <div class="project-header" onclick="toggleCard(this)">
+        <div class="ph-left">
+          <div class="ph-num">2.11</div>
+          <div class="ph-name">Pavilion Ceylon Hill <span class="zh">武吉錫蘭</span></div>
+          <div class="ph-sub">Changkat Raja Chulan · Jelita Orientasi (Pavilion集團) · 已竣工2021–22</div>
+        </div>
+        <div class="ph-right">
+          <span class="tag tag-green">住宅地契</span>
+          <span class="verdict-pill vp-green">首選 #2</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="data-grid">
+          <div class="data-cell"><div class="data-label">建築面積</div><div class="data-value">540–1,374 sq ft</div></div>
+          <div class="data-cell"><div class="data-label">每平方呎均價</div><div class="data-value">RM 800–2,086</div></div>
+          <div class="data-cell"><div class="data-label">起售價</div><div class="data-value">RM 750,000（核實RM100萬門檻）</div></div>
+          <div class="data-cell"><div class="data-label">樓層／單位</div><div class="data-value">51–52層 / 629個單位</div></div>
+          <div class="data-cell"><div class="data-label">地契類型</div><div class="data-value">永久地契 · 住宅分層地契（HDA）</div></div>
+          <div class="data-cell"><div class="data-label">月維護費</div><div class="data-value">RM 0.60/呎</div></div>
+        </div>
+        <div class="subsection-title green">代理商主要賣點</div>
+        <ul class="flag-list">
+          <li><span class="fi fi-g">✦</span>本報告唯一Pavilion集團住宅分層地契項目——HDA保護、較低水電費率</li>
+          <li><span class="fi fi-g">✦</span>俯瞰武吉拿那森林保護區，KLCC黃金三角內的城市綠洲</li>
+          <li><span class="fi fi-g">✦</span>52樓無邊際泳池。2公里內有3個捷運站 + 2個輕快鐵站</li>
+          <li><span class="fi fi-g">✦</span>二手市場有折扣單位低至RM800–1,000/呎，遠低於重置成本</li>
+        </ul>
+        <div class="subsection-title red">風險警示</div>
+        <ul class="flag-list">
+          <li><span class="fi fi-a">▲</span>每平方呎差異大（RM800–2,086）——需比較Brickz.my實際成交價</li>
+          <li><span class="fi fi-a">▲</span>部分單位低於RM100萬——核實外籍買家總價門檻</li>
+        </ul>
+        <div class="verdict-box vb-green"><div class="vb-title">首選推薦 #2 · TOP PICK</div><div class="vb-text">結合Pavilion品牌、住宅分層地契（本報告唯一）、已竣工及RM800–1,000/呎折扣入市機會，這是海外投資人風險調整後最佳的已竣工物業。住宅地契本身已值得溢價。</div></div>
+      </div>
+    </div>
+
+    <!-- Star Residences -->
+    <div class="project-card" id="p-star">
+      <div class="project-header" onclick="toggleCard(this)">
+        <div class="ph-left">
+          <div class="ph-num">2.10</div>
+          <div class="ph-name">Star Residences T1, T2 & T3 <span class="zh">星居</span></div>
+          <div class="ph-sub">Jalan Yap Kwan Seng · Symphony Life + UM Land · 三星C&T承建 · 已竣工</div>
+        </div>
+        <div class="ph-right">
+          <span class="tag tag-green">永久地契</span>
+          <span class="verdict-pill vp-green">價值首選</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="data-grid">
+          <div class="data-cell"><div class="data-label">建築面積</div><div class="data-value">625–2,972 sq ft（1–4房）</div></div>
+          <div class="data-cell"><div class="data-label">每平方呎均價</div><div class="data-value">T1: RM 480–2,257 | T3: RM 1,908–2,507</div></div>
+          <div class="data-cell"><div class="data-label">T3管理</div><div class="data-value">雅詩閣 Ascott Star KLCC</div></div>
+          <div class="data-cell"><div class="data-label">樓層</div><div class="data-value">T1: 57F | T2: 58F | T3: 58F</div></div>
+          <div class="data-cell"><div class="data-label">總單位</div><div class="data-value">1,510個單位（三座合計）</div></div>
+          <div class="data-cell"><div class="data-label">月維護費</div><div class="data-value">~RM 0.40/呎</div></div>
+        </div>
+        <div class="subsection-title green">代理商主要賣點</div>
+        <ul class="flag-list">
+          <li><span class="fi fi-g">✦</span>三星C&T承建（哈里發塔同一承建商）——機構級建築品質</li>
+          <li><span class="fi fi-g">✦</span>T3由雅詩閣國際管理，5星級全球酒店運營商已在位</li>
+          <li><span class="fi fi-g">✦</span>T1二手低至RM480–900/呎——所有永久地契KLCC選項最佳性價比</li>
+        </ul>
+        <div class="subsection-title red">風險警示</div>
+        <ul class="flag-list">
+          <li><span class="fi fi-r">✕</span>T1單位不含停車位——需另租約RM250/月（計入淨收益）</li>
+          <li><span class="fi fi-a">▲</span>1,510個單位總量——同項目內短租競爭較激烈</li>
+        </ul>
+        <div class="verdict-box vb-green"><div class="vb-title">推薦 · 價值首選</div><div class="vb-text">T1二手市場RM480–900/呎三星建造已竣工永久地契KLCC地址是出色的風險調整後入市選擇。T3（雅詩閣管理）是免手動管理投資人的最佳選擇。可在Brickz.my核實實際成交價格。</div></div>
+      </div>
+    </div>
+
+    <!-- CloutHaus -->
+    <div class="project-card" id="p-clout">
+      <div class="project-header" onclick="toggleCard(this)">
+        <div class="ph-left">
+          <div class="ph-num">2.4</div>
+          <div class="ph-name">CloutHaus KLCC <span class="zh">TA Global Berhad</span></div>
+          <div class="ph-sub">28 Jalan P. Ramlee · TA Global（馬交所上市）· 竣工2029</div>
+        </div>
+        <div class="ph-right">
+          <span class="tag tag-green">永久地契</span>
+          <span class="verdict-pill vp-green">推薦</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="data-grid">
+          <div class="data-cell"><div class="data-label">建築面積</div><div class="data-value">549–1,216 sq ft（開放式–3房）</div></div>
+          <div class="data-cell"><div class="data-label">每平方呎均價</div><div class="data-value">RM 2,800–2,900</div></div>
+          <div class="data-cell"><div class="data-label">起售價</div><div class="data-value">RM 1,548,800</div></div>
+          <div class="data-cell"><div class="data-label">樓層</div><div class="data-value">T2: 66層 / 615單位</div></div>
+          <div class="data-cell"><div class="data-label">地契</div><div class="data-value">永久地契（商業）</div></div>
+          <div class="data-cell"><div class="data-label">月維護費</div><div class="data-value">~80仙/呎 + 儲備基金</div></div>
+        </div>
+        <div class="subsection-title green">代理商主要賣點</div>
+        <ul class="flag-list">
+          <li><span class="fi fi-g">✦</span>距雙峰塔30步——真正KLCC核心地址（Jalan P. Ramlee）</li>
+          <li><span class="fi fi-g">✦</span>TA Global馬交所上市，在加拿大、澳洲有國際項目</li>
+          <li><span class="fi fi-g">✦</span>無保證租金回報——透明市場定價，Paradox Hotel整合</li>
+        </ul>
+        <div class="subsection-title red">風險警示</div>
+        <ul class="flag-list">
+          <li><span class="fi fi-a">▲</span>商業地契：運營成本高於住宅地契</li>
+          <li><span class="fi fi-a">▲</span>收益3.5–4.5%——資本增值投資，非現金收益投資</li>
+        </ul>
+        <div class="verdict-box vb-green"><div class="vb-title">推薦</div><div class="vb-text">最適合希望獲得確切雙峰塔地址的高淨值投資人。TA Global上市地位提供財務透明度。無租金保證噱頭，定價反映真實市場價值。</div></div>
+      </div>
+    </div>
+
+    <!-- SWNK -->
+    <div class="project-card" id="p-swnk">
+      <div class="project-header" onclick="toggleCard(this)">
+        <div class="ph-left">
+          <div class="ph-num">2.8</div>
+          <div class="ph-name">SWNK Houze @ BBCC <span class="zh">武吉免登城市中心</span></div>
+          <div class="ph-sub">Jalan Hang Tuah · BBCC Dev（UDA + EcoWorld + EPF）· 竣工2026</div>
+        </div>
+        <div class="ph-right">
+          <span class="tag tag-amber">租賃地契</span>
+          <span class="verdict-pill vp-green">收益首選</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="data-grid">
+          <div class="data-cell"><div class="data-label">建築面積</div><div class="data-value">463–1,238 sq ft（開放式–3房）</div></div>
+          <div class="data-cell"><div class="data-label">每平方呎均價</div><div class="data-value">RM 1,000–1,689（最低每平方呎）</div></div>
+          <div class="data-cell"><div class="data-label">起售價</div><div class="data-value">RM 750,000（核實RM100萬門檻）</div></div>
+          <div class="data-cell"><div class="data-label">樓層／單位</div><div class="data-value">31層 / 441單位</div></div>
+          <div class="data-cell"><div class="data-label">地契</div><div class="data-value">租賃99年（2110年12月到期）</div></div>
+          <div class="data-cell"><div class="data-label">估計毛收益</div><div class="data-value">5–6%（短租策略）</div></div>
+        </div>
+        <div class="subsection-title green">代理商主要賣點</div>
+        <ul class="flag-list">
+          <li><span class="fi fi-g">✦</span>EPF公積金局為JV合夥人——零棄建風險；EcoWorld+UDA執行力強</li>
+          <li><span class="fi fi-g">✦</span>三條軌道：輕快鐵+單軌+捷運。隔壁LaLaport BBCC商場</li>
+          <li><span class="fi fi-g">✦</span>全報告KLCC走廊最低每平方呎，2026年竣工</li>
+        </ul>
+        <div class="subsection-title red">風險警示</div>
+        <ul class="flag-list">
+          <li><span class="fi fi-a">▲</span>租賃地契——以投資價值接受租賃地契條件</li>
+          <li><span class="fi fi-a">▲</span>部分單位低於RM100萬——核實外籍資格單位總價</li>
+        </ul>
+        <div class="verdict-box vb-green"><div class="vb-title">推薦 · 收益首選</div><div class="vb-text">EPF參與使這成為最安全的租賃地契投資。RM1,000–1,350/呎入市、2026年竣工，收益計算是14個項目中最具吸引力的。以租賃地契換取最高性價比是合理取捨。</div></div>
+      </div>
+    </div>
+
+    <!-- Orion -->
+    <div class="project-card" id="p-orion">
+      <div class="project-header" onclick="toggleCard(this)">
+        <div class="ph-left">
+          <div class="ph-num">2.9</div>
+          <div class="ph-name">Orion Bukit Bintang <span class="zh">武吉免登</span></div>
+          <div class="ph-sub">Jalan Gading · Welton Development · 即將竣工2025</div>
+        </div>
+        <div class="ph-right">
+          <span class="tag tag-green">永久地契</span>
+          <span class="verdict-pill vp-amber">有條件推薦</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="data-grid">
+          <div class="data-cell"><div class="data-label">建築面積</div><div class="data-value">491–1,271 sq ft（21種格局）</div></div>
+          <div class="data-cell"><div class="data-label">每平方呎均價</div><div class="data-value">RM 2,707–3,850</div></div>
+          <div class="data-cell"><div class="data-label">起售價</div><div class="data-value">RM 1,500,000+</div></div>
+          <div class="data-cell"><div class="data-label">樓層／單位</div><div class="data-value">46層 / 298單位（精品）</div></div>
+          <div class="data-cell"><div class="data-label">管理</div><div class="data-value">溫德姆精選 70/30利潤分成</div></div>
+          <div class="data-cell"><div class="data-label">月維護費</div><div class="data-value">RM 1.20/呎（全報告最高）</div></div>
+        </div>
+        <div class="subsection-title green">代理商主要賣點</div>
+        <ul class="flag-list">
+          <li><span class="fi fi-g">✦</span>298個單位——武吉免登核心最精品永久地契，供應稀缺</li>
+          <li><span class="fi fi-g">✦</span>東南亞首部戶外高速玻璃觀光升降機，自動化禮賓停車</li>
+          <li><span class="fi fi-g">✦</span>距Pavilion KL僅200米，溫德姆品牌管理</li>
+        </ul>
+        <div class="subsection-title red">風險警示</div>
+        <ul class="flag-list">
+          <li><span class="fi fi-r">✕</span>「最後38個單位」緊迫感——人為稀缺手段，請獨立核實</li>
+          <li><span class="fi fi-r">✕</span>RM1.20/呎維護費全報告最高，顯著增加持有成本</li>
+          <li><span class="fi fi-a">▲</span>收益僅2.5–3.5%——純資本保值投資</li>
+        </ul>
+        <div class="verdict-box vb-amber"><div class="vb-title">有條件推薦</div><div class="vb-text">武吉免登核心最佳精品永久地契。近竣工，Welton記錄良好，溫德姆品牌添加信譽。但高維護費和低收益限制其吸引力，最適合注重地址威望的高淨值買家。</div></div>
+      </div>
+    </div>
+
+    <!-- Skylon -->
+    <div class="project-card" id="p-skylon">
+      <div class="project-header" onclick="toggleCard(this)">
+        <div class="ph-left">
+          <div class="ph-num">2.12</div>
+          <div class="ph-name">Skylon Residences <span class="zh">武吉錫蘭</span></div>
+          <div class="ph-sub">Changkat Raja Chulan · GBD Land · 即將竣工Q1 2025 · 178單位</div>
+        </div>
+        <div class="ph-right">
+          <span class="tag tag-green">永久地契</span>
+          <span class="verdict-pill vp-amber">有條件推薦</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="data-grid">
+          <div class="data-cell"><div class="data-label">建築面積</div><div class="data-value">518–1,259 sq ft（1–2房）</div></div>
+          <div class="data-cell"><div class="data-label">每平方呎均價</div><div class="data-value">RM 1,278–1,815</div></div>
+          <div class="data-cell"><div class="data-label">起售價</div><div class="data-value">RM 859,000（核實RM100萬）</div></div>
+          <div class="data-cell"><div class="data-label">密度</div><div class="data-value">僅178個單位——全報告最低密度</div></div>
+          <div class="data-cell"><div class="data-label">建築師</div><div class="data-value">楊經文事務所（生物氣候設計）</div></div>
+          <div class="data-cell"><div class="data-label">室內設計</div><div class="data-value">Marco Van Ham（悅榕莊同級）</div></div>
+        </div>
+        <ul class="flag-list">
+          <li><span class="fi fi-g">✦</span>178個單位——全報告密度最低，稀缺性保護資產價值</li>
+          <li><span class="fi fi-r">✕</span>GBD Land較小型開發商，交付記錄有限——請直接核實竣工狀態</li>
+          <li><span class="fi fi-a">▲</span>僅1–2房格局，限制長租企業客戶天花板</li>
+        </ul>
+        <div class="verdict-box vb-amber"><div class="vb-title">有條件推薦</div><div class="vb-text">精品、近竣工、永久地契，武吉錫蘭地帶具備真正設計背景。GBD Land規模較小需進一步核實。在推進前請確認VP狀態及地契。</div></div>
+      </div>
+    </div>
+
+    <!-- Pavilion Square -->
+    <div class="project-card" id="p-pav-sq">
+      <div class="project-header" onclick="toggleCard(this)">
+        <div class="ph-left">
+          <div class="ph-num">2.2</div>
+          <div class="ph-name">Pavilion Square <span class="zh">Pavilion Group / Malton</span></div>
+          <div class="ph-sub">Jalan Raja Chulan · 租賃99年 · 竣工Q4 2027</div>
+        </div>
+        <div class="ph-right">
+          <span class="tag tag-amber">租賃地契</span>
+          <span class="verdict-pill vp-amber">有條件推薦</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="data-grid">
+          <div class="data-cell"><div class="data-label">建築面積</div><div class="data-value">504–1,272 sq ft</div></div>
+          <div class="data-cell"><div class="data-label">每平方呎均價</div><div class="data-value">RM 2,000–2,400</div></div>
+          <div class="data-cell"><div class="data-label">地契</div><div class="data-value">租賃99年（2122年到期）</div></div>
+          <div class="data-cell"><div class="data-label">步行指數</div><div class="data-value">98/100 · 天橋直通Pavilion商場</div></div>
+          <div class="data-cell"><div class="data-label">起售價</div><div class="data-value">~RM 1,200,000</div></div>
+          <div class="data-cell"><div class="data-label">竣工</div><div class="data-value">Q4 2027</div></div>
+        </div>
+        <ul class="flag-list">
+          <li><span class="fi fi-r">✕</span><strong>租賃地契按永久地契定價（RM2,000–2,400/呎）——典型定價陷阱</strong></li>
+          <li><span class="fi fi-g">✦</span>Pavilion品牌——所有新推盤中二手轉售流動性最強</li>
+          <li><span class="fi fi-g">✦</span>步行指數98/100，直通Pavilion商場天橋</li>
+        </ul>
+        <div class="verdict-box vb-amber"><div class="vb-title">有條件推薦</div><div class="vb-text">Pavilion品牌保障最高流動性。但以RM2,000–2,400/呎購買租賃地契是結構性溢價支付。最適合將品牌安全感置於資本效率之上的投資人。</div></div>
+      </div>
+    </div>
+
+    <!-- Lofthill -->
+    <div class="project-card" id="p-lofthill">
+      <div class="project-header" onclick="toggleCard(this)">
+        <div class="ph-left">
+          <div class="ph-num">2.14</div>
+          <div class="ph-name">Lofthill Residence <span class="zh">阿曼尼集團</span></div>
+          <div class="ph-sub">Jalan Raja Uda · Armani Group · 竣工2028 · 50–60m至Raja Uda捷運</div>
+        </div>
+        <div class="ph-right">
+          <span class="tag tag-green">永久地契</span>
+          <span class="verdict-pill vp-amber">有條件</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="data-grid">
+          <div class="data-cell"><div class="data-label">建築面積</div><div class="data-value">653–1,917 sq ft（2房+）</div></div>
+          <div class="data-cell"><div class="data-label">每平方呎均價</div><div class="data-value">~RM 1,300–1,600</div></div>
+          <div class="data-cell"><div class="data-label">起售價</div><div class="data-value">~RM 849,000（多個低於RM100萬）</div></div>
+          <div class="data-cell"><div class="data-label">樓層／單位</div><div class="data-value">51層 / 653個單位</div></div>
+          <div class="data-cell"><div class="data-label">捷運距離</div><div class="data-value">50–60m至Raja Uda捷運站</div></div>
+          <div class="data-cell"><div class="data-label">竣工</div><div class="data-value">2028</div></div>
+        </div>
+        <ul class="flag-list">
+          <li><span class="fi fi-r">✕</span>多個單位低於RM100萬——核實單位+車位總價超過外籍門檻</li>
+          <li><span class="fi fi-a">▲</span>Jalan Raja Uda非KLCC核心——甘榜峇魯是不同微市場</li>
+          <li><span class="fi fi-a">▲</span>阿曼尼集團5個項目同時開發——集中交付風險</li>
+          <li><span class="fi fi-g">✦</span>50–60m至捷運站是真正長期優勢，RM1,300–1,600/呎永久地契定價合理</li>
+        </ul>
+        <div class="verdict-box vb-amber"><div class="vb-title">有條件推薦</div><div class="vb-text">優於Armani Prestige。MRT可達性是真正優勢，RM1,300–1,600/呎永久地契近TRX有邏輯。但需確認單位超RM100萬，接受甘榜峇魯非KLCC核心定位，並追蹤阿曼尼集團整體交付時間表。</div></div>
+      </div>
+    </div>
+
+    <!-- Armani Hallson -->
+    <div class="project-card" id="p-hallson">
+      <div class="project-header" onclick="toggleCard(this)">
+        <div class="ph-left">
+          <div class="ph-num">2.1</div>
+          <div class="ph-name">Armani Hallson KLCC <span class="zh">阿曼尼集團</span></div>
+          <div class="ph-sub">Jalan Ampang · Armani Group / Magna Prima · 竣工2029 · 2,215個單位</div>
+        </div>
+        <div class="ph-right">
+          <span class="tag tag-amber">SoHo/SoVo</span>
+          <span class="verdict-pill vp-amber">謹慎</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="data-grid">
+          <div class="data-cell"><div class="data-label">建築面積</div><div class="data-value">SoHo: 538–558呎 / SoVo: 406–1,182呎</div></div>
+          <div class="data-cell"><div class="data-label">每平方呎均價</div><div class="data-value">RM 1,636–1,800</div></div>
+          <div class="data-cell"><div class="data-label">起售價</div><div class="data-value">RM 870,000</div></div>
+          <div class="data-cell"><div class="data-label">樓層</div><div class="data-value">68層(SoHo) / 78層(SoVo)</div></div>
+          <div class="data-cell"><div class="data-label">總單位</div><div class="data-value">2,215個單位（全報告最多）</div></div>
+          <div class="data-cell"><div class="data-label">月維護費</div><div class="data-value">~95仙/呎</div></div>
+        </div>
+        <ul class="flag-list">
+          <li><span class="fi fi-r">✕</span><strong>SoVo=商業地契：無HDA保護，外籍融資困難</strong></li>
+          <li><span class="fi fi-r">✕</span><strong>2,215個單位供應量過大——竣工時租金與轉售嚴重稀釋</strong></li>
+          <li><span class="fi fi-a">▲</span>阿曼尼集團同時5個項目——交付能力存疑</li>
+          <li><span class="fi fi-g">✦</span>永久地契，Jalan Ampang地址，有蓋天橋至KLCC（SoHo棟）</li>
+        </ul>
+        <div class="verdict-box vb-amber"><div class="vb-title">謹慎</div><div class="vb-text">SoHo棟（住宅地契）是外籍買家唯一可行選擇。2,215個單位是最大風險——竣工時激烈短租競爭。在入門價位作為KLCC品牌投資尚可，但非首選。</div></div>
+      </div>
+    </div>
+
+    <!-- Centrix -->
+    <div class="project-card" id="p-centrix">
+      <div class="project-header" onclick="toggleCard(this)">
+        <div class="ph-left">
+          <div class="ph-num">2.7</div>
+          <div class="ph-name">Centrix KLCC (The Station) <span class="zh">Intan Sekitar</span></div>
+          <div class="ph-sub">Dang Wangi輕快鐵站上方 · 租賃地契 · 竣工2028–2029</div>
+        </div>
+        <div class="ph-right">
+          <span class="tag tag-amber">租賃地契</span>
+          <span class="verdict-pill vp-amber">謹慎</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="data-grid">
+          <div class="data-cell"><div class="data-label">建築面積</div><div class="data-value">571–1,187 sq ft</div></div>
+          <div class="data-cell"><div class="data-label">每平方呎均價</div><div class="data-value">~RM 1,550–1,700</div></div>
+          <div class="data-cell"><div class="data-label">起售價</div><div class="data-value">RM 907,800（多個低於RM100萬）</div></div>
+          <div class="data-cell"><div class="data-label">連通性</div><div class="data-value">大廳直連Dang Wangi輕快鐵月台</div></div>
+          <div class="data-cell"><div class="data-label">估計毛收益</div><div class="data-value">6–7%（雙鑰匙短租）</div></div>
+          <div class="data-cell"><div class="data-label">竣工</div><div class="data-value">2028–2029</div></div>
+        </div>
+        <ul class="flag-list">
+          <li><span class="fi fi-r">✕</span><strong>Intan Sekitar為不知名開發商——本報告最高開發商風險</strong></li>
+          <li><span class="fi fi-r">✕</span>租賃地契定價RM1,550–1,700/呎——應要求折扣</li>
+          <li><span class="fi fi-g">✦</span>大廳直連輕快鐵——最強公共交通便利性，租金需求持久</li>
+        </ul>
+        <div class="verdict-box vb-amber"><div class="vb-title">謹慎</div><div class="vb-text">公共交通優勢是真實且持久的。但不知名開發商承建複雜交通整合建築風險重大。若計劃推進，委託律師核實開發商融資設施和APDL狀態。</div></div>
+      </div>
+    </div>
+
+    <!-- Platinum Suite -->
+    <div class="project-card" id="p-plat">
+      <div class="project-header" onclick="toggleCard(this)">
+        <div class="ph-left">
+          <div class="ph-num">2.5</div>
+          <div class="ph-name">Platinum Suite 2 / Victory Suites <span class="zh">鉑金勝利</span></div>
+          <div class="ph-sub">Jalan Sultan Ismail · Platinum Victory Dev · 已竣工</div>
+        </div>
+        <div class="ph-right">
+          <span class="tag tag-green">永久地契</span>
+          <span class="verdict-pill vp-amber">中性</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="data-grid">
+          <div class="data-cell"><div class="data-label">建築面積</div><div class="data-value">~580–1,400 sq ft</div></div>
+          <div class="data-cell"><div class="data-label">每平方呎均價</div><div class="data-value">RM 1,349–2,091（二手）</div></div>
+          <div class="data-cell"><div class="data-label">樓層</div><div class="data-value">51層 / 已竣工</div></div>
+        </div>
+        <ul class="flag-list">
+          <li><span class="fi fi-g">✦</span>已竣工，永久地契，無建設風險</li>
+          <li><span class="fi fi-a">▲</span>Platinum Victory主要業務在Setapak中端市場——KLCC品牌略有延伸</li>
+        </ul>
+        <div class="verdict-box vb-amber"><div class="vb-title">中性</div><div class="vb-text">已竣工較低每平方呎入市可接受，但缺乏頂級租金回報所需品牌溢價。已竣工市場有更好替代選擇（Star T1、Pavilion Ceylon Hill）。</div></div>
+      </div>
+    </div>
+
+    <!-- Armani Prestige -->
+    <div class="project-card" id="p-prestige">
+      <div class="project-header" onclick="toggleCard(this)">
+        <div class="ph-left">
+          <div class="ph-num">2.13</div>
+          <div class="ph-name">Armani Prestige <span class="zh">阿曼尼集團</span></div>
+          <div class="ph-sub">Jalan Mayang，甘榜峇魯邊緣 · SOFO商業地契 · 大多數單位低於RM100萬</div>
+        </div>
+        <div class="ph-right">
+          <span class="tag tag-red">多數不符外籍資格</span>
+          <span class="verdict-pill vp-red">強烈迴避</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="data-grid">
+          <div class="data-cell"><div class="data-label">每平方呎均價</div><div class="data-value" style="color:var(--red)">RM 2,381–2,800</div></div>
+          <div class="data-cell"><div class="data-label">價格區間</div><div class="data-value" style="color:var(--red)">RM 650,000–924,000（大多數低於RM100萬）</div></div>
+          <div class="data-cell"><div class="data-label">地契</div><div class="data-value" style="color:var(--red)">SOFO商業地契（最低買家保護）</div></div>
+          <div class="data-cell"><div class="data-label">竣工</div><div class="data-value">Q1 2028</div></div>
+          <div class="data-cell"><div class="data-label">管理</div><div class="data-value">Five Senses（本地無品牌）</div></div>
+          <div class="data-cell"><div class="data-label">真實地址</div><div class="data-value" style="color:var(--red)">甘榜峇魯邊緣，非KLCC核心</div></div>
+        </div>
+        <ul class="flag-list">
+          <li><span class="fi fi-r">✕</span><strong>關鍵：大多數/全部單位低於RM100萬——在法律上不符合外籍購房資格</strong></li>
+          <li><span class="fi fi-r">✕</span>SOFO=商業地契——所有單位類型中最低買家保護，商業電費，銀行較低按揭成數</li>
+          <li><span class="fi fi-r">✕</span>RM2,800/呎嚴重高估——此走廊可比物業成交RM839–1,497/呎</li>
+          <li><span class="fi fi-r">✕</span>Five Senses無全球品牌背景——與雅詩閣、溫德姆相比無記錄</li>
+          <li><span class="fi fi-r">✕</span>「正對雙峰塔」是行銷誇大——Mayang路是甘榜峇魯邊緣</li>
+        </ul>
+        <div class="verdict-box vb-red"><div class="vb-title">強烈建議迴避 ✕</div><div class="vb-text">大多數單位低於RM100萬外籍門檻，在法律上不符合資格。少數可能達到RM100萬的是SOFO商業地契在甘榜峇魯邊緣以RM2,800/呎定價——從根本上定價錯誤。本報告14個項目中最差風險回報比。</div></div>
+      </div>
+    </div>
+
+    <!-- Royal Lexis -->
+    <div class="project-card" id="p-lexis">
+      <div class="project-header" onclick="toggleCard(this)">
+        <div class="ph-left">
+          <div class="ph-num">2.3</div>
+          <div class="ph-name">Royal Lexis KLCC <span class="zh">保證租金回報陷阱</span></div>
+          <div class="ph-sub">Jalan Sultan Ismail · KL Metro / Lexis Hotel Group · 竣工2029</div>
+        </div>
+        <div class="ph-right">
+          <span class="tag tag-red">GRR陷阱</span>
+          <span class="verdict-pill vp-red">強烈迴避</span>
+          <span class="chevron">▾</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="data-grid">
+          <div class="data-cell"><div class="data-label">每平方呎均價</div><div class="data-value" style="color:var(--red)">~RM 3,000–3,300（全報告最高）</div></div>
+          <div class="data-cell"><div class="data-label">GRR</div><div class="data-value" style="color:var(--red)">前3年6%，第4–15年75/25分成</div></div>
+          <div class="data-cell"><div class="data-label">3年後真實收益</div><div class="data-value" style="color:var(--red)">~2–2.5%（低於定存利率）</div></div>
+          <div class="data-cell"><div class="data-label">地契</div><div class="data-value" style="color:var(--red)">僅商業地契</div></div>
+          <div class="data-cell"><div class="data-label">起售價</div><div class="data-value">~RM 1,900,000</div></div>
+          <div class="data-cell"><div class="data-label">竣工</div><div class="data-value">Q4 2029</div></div>
+        </div>
+        <ul class="flag-list">
+          <li><span class="fi fi-r">✕</span><strong>GRR是最常見的海外投資人陷阱——6%保證已計入高估購買價格</strong></li>
+          <li><span class="fi fi-r">✕</span>GRR期後（第4年起）實際收益~2–2.5%，低於馬來西亞定期存款利率</li>
+          <li><span class="fi fi-r">✕</span>僅商業地契：較高評估稅、商業電費、無HDA</li>
+          <li><span class="fi fi-r">✕</span>KL Metro集團專注酒店業，無KLCC住宅交付記錄</li>
+          <li><span class="fi fi-r">✕</span>全報告最高每平方呎（~RM3,200）——最差收益計算</li>
+        </ul>
+        <div class="verdict-box vb-red"><div class="vb-title">強烈建議迴避 ✕</div><div class="vb-text">強烈迴避。保證租金回報完全由高估購買價格支撐。第3年後您持有的是商業地契、RM3,200/呎資產，且無任何合約保障收益。這是本報告對海外投資人最明顯的陷阱。</div></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SECTION 3: Comparison Table -->
+  <section class="section" id="comparison">
+    <div class="section-tag">SECTION 03 · COMPARISON</div>
+    <h2 id="s3-h2">全面比較表 <span class="zh">All 14 Projects Side-by-Side</span></h2>
+    <div class="comp-table-wrap">
+      <table class="comp-table">
+        <thead>
+          <tr><th>項目</th><th>現況</th><th>每平方呎均價</th><th>地契</th><th>開發商風險</th><th>毛收益</th><th>評級</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><a href="#p-conlay">The Conlay</a></td><td>即將竣工</td><td>~2,450</td><td>永久</td><td class="c-green">極低</td><td>3.5–4.5%</td><td class="c-green">★★★★★ 首選#1</td></tr>
+          <tr><td><a href="#p-ceylon">Pavilion Ceylon Hill</a></td><td>已竣工</td><td>800–2,086</td><td>永久（住宅）</td><td class="c-green">低</td><td>4–5%</td><td class="c-green">★★★★★ 首選#2</td></tr>
+          <tr><td><a href="#p-star">Star Residences T1</a></td><td>已竣工</td><td>480–2,257</td><td>永久</td><td class="c-green">極低</td><td>~3.89%</td><td class="c-green">★★★★☆ 價值首選</td></tr>
+          <tr><td><a href="#p-clout">CloutHaus KLCC</a></td><td>2029</td><td>2,800–2,900</td><td>永久</td><td class="c-green">低</td><td>3.5–4.5%</td><td class="c-green">★★★★☆ 推薦</td></tr>
+          <tr><td><a href="#p-swnk">SWNK Houze BBCC</a></td><td>2026</td><td>1,000–1,689</td><td>租賃</td><td class="c-green">極低</td><td>5–6%</td><td class="c-green">★★★★☆ 收益首選</td></tr>
+          <tr><td><a href="#p-skylon">Skylon Residences</a></td><td>近竣工</td><td>1,278–1,815</td><td>永久</td><td class="c-amber">中等</td><td>3.5–5%</td><td>★★★☆☆ 有條件</td></tr>
+          <tr><td><a href="#p-pav-sq">Pavilion Square</a></td><td>2027</td><td>2,000–2,400</td><td class="c-amber">租賃</td><td class="c-green">低</td><td>3.5–4%</td><td class="c-amber">★★★☆☆ 有條件</td></tr>
+          <tr><td><a href="#p-lofthill">Lofthill Residence</a></td><td>2028</td><td>1,300–1,600</td><td>永久</td><td class="c-amber">中高</td><td>4–5.5%</td><td class="c-amber">★★★☆☆ 有條件</td></tr>
+          <tr><td><a href="#p-orion">Orion Bukit Bintang</a></td><td>近竣工</td><td>2,707–3,850</td><td>永久</td><td class="c-amber">中等</td><td>2.5–3.5%</td><td class="c-amber">★★★☆☆ 有條件</td></tr>
+          <tr><td><a href="#p-hallson">Armani Hallson KLCC</a></td><td>2029</td><td>1,636–1,800</td><td>永久(SoHo)</td><td class="c-amber">中高</td><td>3.5–5%</td><td class="c-amber">★★☆☆☆ 謹慎</td></tr>
+          <tr><td><a href="#p-centrix">Centrix KLCC</a></td><td>2028–29</td><td>1,550–1,700</td><td class="c-amber">租賃</td><td class="c-red">高</td><td>6–7%</td><td class="c-amber">★★☆☆☆ 謹慎</td></tr>
+          <tr><td><a href="#p-plat">Platinum Suite 2</a></td><td>已竣工</td><td>1,349–2,091</td><td>永久</td><td class="c-green">低</td><td>4–5%</td><td class="c-amber">★★☆☆☆ 中性</td></tr>
+          <tr><td><a href="#p-prestige">Armani Prestige</a></td><td>2028</td><td class="c-red">2,381–2,800</td><td class="c-red">SOFO商業</td><td class="c-red">高</td><td class="c-red">2–3%</td><td class="c-red">✕ 迴避</td></tr>
+          <tr><td><a href="#p-lexis">Royal Lexis KLCC</a></td><td>2029</td><td class="c-red">3,000–3,300</td><td class="c-red">商業</td><td class="c-red">高</td><td class="c-red">~2%(GRR後)</td><td class="c-red">✕ 迴避</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Agent Traps -->
+  <section class="section" id="traps">
+    <div class="section-tag">SECTION 04 · AGENT TRAPS</div>
+    <h2 id="s4-h2">7大代理商陷阱警示 <span class="zh">Red Flags to Watch</span></h2>
+
+    <div class="alert alert-red">
+      <div class="alert-title">⚠ 陷阱一：保證租金回報（GRR）</div>
+      <p>開發商承諾2–3年5–8%保證回報。現實：「保證」由高估購買價格資助。保證期後您面臨的是一個高估資產，實際收益低於市場。Royal Lexis型GRR期後真實淨收益約2–2.5%，低於馬來西亞定存利率。應詢問：「如果沒有保證租金回報，此走廊市場租金下收益是多少？」</p>
+    </div>
+    <div class="alert alert-amber">
+      <div class="alert-title">⚠ 陷阱二：人為稀缺（「最後X個單位」）</div>
+      <p>代理商頻繁聲稱「此價格僅剩5個單位」或「最後38個單位」。開發商通常保留庫存製造壓力。所有「最後X單位」聲稱應直接向開發商銷售部核實，而非透過代理商。</p>
+    </div>
+    <div class="alert alert-amber">
+      <div class="alert-title">⚠ 陷阱三：SOFO/SoVo商業地契偽裝為住宅投資</div>
+      <p>商業地契（SOFO、SoVo）被積極作為住宅投資銷售。關鍵差異：無HDA保護、商業電費（比住宅高約50%）、商業評估稅率、銀行較低按揭成數。務必確認：是住宅分層地契還是商業地契？</p>
+    </div>
+    <div class="alert alert-amber">
+      <div class="alert-title">⚠ 陷阱四：租賃地契按永久地契定價</div>
+      <p>Pavilion Square以RM2,000–2,400/呎出售租賃地契，與永久地契相當。馬來西亞租賃地契在剩餘年期低於60年時開始顯著折扣（約40年後）。原則：租賃地契相對同等永久地契應有10–20%折扣。</p>
+    </div>
+    <div class="alert alert-amber">
+      <div class="alert-title">⚠ 陷阱五：大型項目供應過剩</div>
+      <p>Armani Hallson（2,215單位）、Lofthill（653單位）、Star Residences（1,510單位）代表大量供應在相近竣工日期進入租賃市場。數百個同一棟樓單位同時出租時，租金受壓，空置率上升。</p>
+    </div>
+    <div class="alert alert-amber">
+      <div class="alert-title">⚠ 陷阱六：誇大「預期」收益聲稱</div>
+      <p>代理商通常引用毛收益，不考慮：空置率（KL新項目行業平均15–25%）、物業管理費（8–15%）、維護費、儲備基金、地租、評估稅、非居民租金所得稅26%及RPGT。引用7%毛收益通常淨收益僅3.5–4%。</p>
+    </div>
+    <div class="alert alert-amber">
+      <div class="alert-title">⚠ 陷阱七：非KLCC地點聲稱KLCC地址</div>
+      <p>Armani Prestige（Mayang路）和Lofthill（Raja Uda路）均以「KLCC地址」行銷，但實際位於甘榜峇魯（Kampung Baru）——距雙峰塔1.5–2公里的馬來保留地村落，是截然不同的微市場，租金溢價遠低於Jalan Ampang或Jalan P. Ramlee。</p>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Armani Risk -->
+  <section class="section" id="armani">
+    <div class="section-tag">SECTION 05 · DEVELOPER RISK</div>
+    <h2 id="s5-h2">阿曼尼集團集中風險 <span class="zh">Armani Group Portfolio Risk</span></h2>
+    <div class="alert alert-red">
+      <div class="alert-title">⚠ 關鍵風險：阿曼尼集團同時開發5個以上KL項目</div>
+      <p>截至2026年5月，阿曼尼集團同時開發約3,668+個單位：Armani Hallson（2,215）、Armani Prestige（350）、Lofthill（653）、Armani Raja Uda（450），並據報正在洽購Jalan Raja Chulan客家大廈地塊（~RM7.76億）。<br><br>基準對比：E&O每次只推進一個Conlay；Pavilion Group每個周期只推進一個旗艦；TA Global只有一個CloutHaus。單一項目專注的紀律是開發商質素的重要信號。<br><br>若任何項目銷售不佳或資金緊張，跨項目延誤的可能性很高。</p>
+    </div>
+    <div class="comp-table-wrap">
+      <table class="comp-table">
+        <thead><tr><th>項目</th><th>地點</th><th>單位數</th><th>每平方呎均價</th><th>地契</th><th>竣工</th><th>外籍資格</th></tr></thead>
+        <tbody>
+          <tr><td>Armani Hallson KLCC</td><td>Jalan Ampang</td><td>2,215</td><td>1,636–1,800</td><td>永久(SoHo住宅)</td><td>2029</td><td class="c-green">是（SoHo單位）</td></tr>
+          <tr><td>Armani Prestige</td><td>Jalan Mayang</td><td>350</td><td>2,381–2,800</td><td class="c-red">SOFO商業</td><td>Q1 2028</td><td class="c-red">大多數單位否</td></tr>
+          <tr><td>Lofthill Residence</td><td>Jalan Raja Uda</td><td>653</td><td>1,300–1,600</td><td>永久</td><td>2028</td><td class="c-amber">部分單位可能符合</td></tr>
+          <tr><td>Armani Raja Uda</td><td>Jalan Raja Uda</td><td>450</td><td>839–1,497</td><td>永久（住宅）</td><td>2026</td><td class="c-red">否（全部低於RM100萬）</td></tr>
+          <tr><td><strong>合計在建</strong></td><td>—</td><td class="c-red"><strong>3,668+</strong></td><td>—</td><td>—</td><td>—</td><td class="c-red">集中風險</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SECTION 6: Checklist -->
+  <section class="section" id="checklist">
+    <div class="section-tag">SECTION 06 · DUE DILIGENCE</div>
+    <h2 id="s6-h2">盡職調查清單 <span class="zh">Due Diligence Checklist</span></h2>
+    <p id="s6-p">點擊勾選框記錄您的進度。</p>
+
+    <ul class="checklist" id="ddList">
+      <li><div class="check-box" onclick="toggleCheck(this)"></div>在Brickz.my獨立核實實際成交價格（印花稅價格，非要價）</li>
+      <li><div class="check-box" onclick="toggleCheck(this)"></div>查閱NAPIC季度報告，確認目標區域的空置率</li>
+      <li><div class="check-box" onclick="toggleCheck(this)"></div>確認總購買價格（單位+車位+律師費+印花稅）超過RM100萬</li>
+      <li><div class="check-box" onclick="toggleCheck(this)"></div>若為商業地契單位，向銀行具體詢問外籍買家商業物業按揭政策</li>
+      <li><div class="check-box" onclick="toggleCheck(this)"></div>要求開發商的過渡融資設施函及APDL（廣告許可與開發商執照）證書</li>
+      <li><div class="check-box" onclick="toggleCheck(this)"></div>親自參觀實際地址（非僅售樓處）核實地址和周邊環境</li>
+      <li><div class="check-box" onclick="toggleCheck(this)"></div>使用當前市場租金計算淨收益（減去20%空置、管理費、維護費、26%非居民稅）</li>
+      <li><div class="check-box" onclick="toggleCheck(this)"></div>在馬來西亞開設本地銀行帳戶（匯豐/大眾銀行/馬來亞銀行）</li>
+      <li><div class="check-box" onclick="toggleCheck(this)"></div>諮詢台灣稅務顧問，確認台馬雙重徵稅協議適用性</li>
+      <li><div class="check-box" onclick="toggleCheck(this)"></div>委任獨立馬來西亞房地產律師審查SPA（銷售與購買協議）</li>
+    </ul>
+
+    <h2 style="font-family:'Playfair Display',serif;font-size:24px;margin:36px 0 16px;" id="s6-cost">主要費用預算</h2>
+    <table class="cost-table">
+      <thead><tr><th>費用項目</th><th>估算</th></tr></thead>
+      <tbody>
+        <tr><td>印花稅（SPA）</td><td>首RM10萬：1%；RM10萬–RM50萬：2%；RM50萬–RM100萬：3%；RM100萬以上：4%</td></tr>
+        <tr><td>律師費</td><td>約佔購買價格0.5–1%</td></tr>
+        <tr><td>不動產盈利稅（RPGT）</td><td>3年內出售：30%；第3–4年：20%；第4–5年：15%；第5年後：10%（非公民）</td></tr>
+        <tr><td>租金所得稅</td><td>淨租金收入的26%（非居民稅率）</td></tr>
+        <tr><td>物業管理費</td><td>毛租金的8–15%</td></tr>
+        <tr><td>年度維護費</td><td>見各項目數字（每月RM0.40–1.20/呎）</td></tr>
+        <tr><td>銀行按揭成數（外籍）</td><td>通常70%（首付30%）</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alert alert-teal" style="margin-top:28px;">
+      <div class="alert-title">免責聲明</div>
+      <p>本報告根據截至2026年5月可公開獲取的信息作為決策支持工具編製。所有價格和項目詳情應在作出任何投資承諾前向開發商、律師和持牌房地產代理獨立核實。本文件不構成財務或法律建議。</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>KLCC Property Investment Report · Taiwan Investor Edition · May 2026</p>
+    <p>資料來源：<a href="https://theedgemalaysia.com" target="_blank">The Edge Malaysia</a> · <a href="https://www.propertyguru.com.my" target="_blank">PropertyGuru</a> · <a href="https://www.iproperty.com.my" target="_blank">iProperty</a> · <a href="https://www.brickz.my" target="_blank">Brickz.my</a> · <a href="https://www.edgeprop.my" target="_blank">EdgeProp.my</a></p>
+    <p style="margin-top:8px;">機密文件 · 僅供個人投資決策參考使用</p>
+  </div>
+
+</div><!-- /main -->
+
+<script>
+// ─── Toggle project card ───────────────────────────────────
+function toggleCard(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.classList.toggle('open', !isOpen);
+}
+
+// ─── Smooth scroll to section ─────────────────────────────
+function goTo(id) {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // auto open the card
+  const card = document.getElementById(id);
+  if (card) {
+    const body = card.querySelector('.project-body');
+    const chevron = card.querySelector('.chevron');
+    if (body && !body.classList.contains('open')) {
+      body.classList.add('open');
+      chevron?.classList.add('open');
+    }
+  }
+}
+
+// ─── Checklist toggle ─────────────────────────────────────
+function toggleCheck(el) {
+  el.classList.toggle('checked');
+  el.textContent = el.classList.contains('checked') ? '✓' : '';
+}
+
+// ─── Active nav on scroll ─────────────────────────────────
+const navLinks = document.querySelectorAll('.nav-item');
+const sections = document.querySelectorAll('[id]');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+  navLinks.forEach(l => {
+    l.classList.toggle('active', l.getAttribute('href') === '#' + current);
+  });
+}, { passive: true });
+
+// ─── Language toggle ──────────────────────────────────────
+const translations = {
+  zh: {
+    'nav-title':'房地產投資報告','nav-sub':'14個項目 · 海外投資人分析',
+    'nav-s0':'執行摘要','nav-s1':'項目分析','nav-s2':'分析工具',
+    'n-sum':'執行摘要 & 排名','n-comp':'全面比較表','n-trap':'代理商陷阱警示','n-arm':'阿曼尼集中風險','n-chk':'盡職調查清單',
+    'hero-tag':'KLCC CORRIDOR · FOREIGN INVESTOR ANALYSIS',
+    'hero-h1':'KLCC Property<br><span style="color:var(--teal2)">Investment Report</span>',
+    'hero-zh':'吉隆坡城市中心房地產投資報告',
+    'hero-date':'MAY 2026 · CONFIDENTIAL',
+    'hl1':'項目分析','hl2':'強烈推薦','hl3':'強烈建議迴避','hl4':'代理商陷阱警示',
+    's1-tag':'SECTION 01 · EXECUTIVE SUMMARY',
+    's1-h2':'主要推薦排名',
+    's1-sub':'Top Picks for Foreign Investors',
+    's1-p':'本報告分析KLCC黃金三角區域14個項目，涵蓋新推盤與已竣工公寓，針對海外投資人（外籍購房最低RM100萬）提供獨立評估。以下為核心推薦排名：',
+    's2-h2':'逐項目詳細分析',
+    's2-p':'點擊任一項目展開完整分析。排列順序依推薦優先度排序。',
+    's3-h2':'全面比較表',
+    's4-h2':'7大代理商陷阱警示',
+    's5-h2':'阿曼尼集團集中風險',
+    's6-h2':'盡職調查清單',
+    's6-p':'點擊勾選框記錄您的進度。',
+    's6-cost':'主要費用預算',
+  },
+  en: {
+    'nav-title':'Property Investment Report','nav-sub':'14 Projects · Foreign Investor Analysis',
+    'nav-s0':'Executive Summary','nav-s1':'Project Analysis','nav-s2':'Tools',
+    'n-sum':'Summary & Rankings','n-comp':'Comparison Table','n-trap':'Agent Traps','n-arm':'Armani Risk','n-chk':'Due Diligence',
+    'hero-tag':'KLCC CORRIDOR · FOREIGN INVESTOR ANALYSIS',
+    'hero-h1':'KLCC Property<br><span style="color:var(--teal2)">Investment Report</span>',
+    'hero-zh':'Kuala Lumpur City Centre · Taiwan Investor Edition',
+    'hero-date':'MAY 2026 · CONFIDENTIAL',
+    'hl1':'Projects Analysed','hl2':'Top Picks','hl3':'Avoid','hl4':'Agent Traps',
+    's1-tag':'SECTION 01 · EXECUTIVE SUMMARY',
+    's1-h2':'Top Recommendations',
+    's1-sub':'Ranked for Foreign Investors',
+    's1-p':'This report analyses 14 projects in and around the KLCC Golden Triangle. Foreign buyers must purchase at minimum RM1,000,000. Rankings are based on developer quality, tenure, yield, and risk.',
+    's2-h2':'Project-by-Project Analysis',
+    's2-p':'Click any card to expand full analysis. Sorted by recommendation priority.',
+    's3-h2':'Full Comparison Table',
+    's4-h2':'7 Agent Manipulation Tactics',
+    's5-h2':'Armani Group Portfolio Risk',
+    's6-h2':'Due Diligence Checklist',
+    's6-p':'Click the checkboxes to track your progress.',
+    's6-cost':'Key Cost Budget',
+  }
+};
+
+function setLang(lang) {
+  document.getElementById('btn-zh').classList.toggle('active', lang==='zh');
+  document.getElementById('btn-en').classList.toggle('active', lang==='en');
+  document.documentElement.lang = lang==='zh'?'zh-TW':'en';
+  const t = translations[lang];
+  Object.keys(t).forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = t[id];
+  });
+}
+</script>
+</body>
+</html>
